@@ -64,6 +64,7 @@
   <a href="#about">About</a>
   <a href="#education">Education</a>
   <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
   <a href="#projects">Projects</a>
   <a href="#leadership">Leadership</a>
   <a href="#honors">Honors</a>
@@ -73,8 +74,9 @@
 <section id="about">
   <h2>About Me</h2>
   <p>
-    I’m a Computer Science student at Grinnell College (Class of 2027) with experience in Java, Python, and C.
-    I focus on building data-driven and systems-level software—from machine learning pipelines to low-level concurrency systems.
+    I’m a Computer Science student at Grinnell College (Class of 2027) with experience in Java, Python, C, and Luau.
+    I focus on building data-driven and systems-level software—from machine learning pipelines to low-level concurrency
+    systems to a live, server-authoritative multiplayer game.
   </p>
   <p>
     I’m seeking a Summer 2026 Software Engineering Internship focused on backend systems, data engineering, or machine learning.
@@ -93,10 +95,20 @@
 
 <section id="skills">
   <h2>Technical Skills</h2>
-  <p><strong>Languages:</strong> Java, Python, C, C#, SQL</p>
-  <p><strong>Tools & Frameworks:</strong> Git/GitHub, IntelliJ IDEA, VS Code, JavaFX, Streamlit, Linux, Unix, Excel, MATLAB, REST APIs</p>
+  <p><strong>Languages:</strong> Java, Python, C, C#, Luau, SQL</p>
+  <p><strong>Tools & Frameworks:</strong> Git/GitHub, Rojo, IntelliJ IDEA, VS Code, JavaFX, Streamlit, Linux, Unix, Excel, MATLAB, REST APIs</p>
   <p><strong>Libraries:</strong> pandas, scikit-learn, XGBoost</p>
   <p><strong>Core Competencies:</strong> Data Structures & Algorithms, OOP, Algorithm Design, Concurrency, Database Design, Machine Learning, Statistical Modeling, Software Testing (JUnit)</p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <h3>Community Moderator / Production Assistant</h3>
+  <p><em>YouTube Channels (5M+ combined subscribers) — May 2026 – Present</em></p>
+  <ul>
+    <li>Manually reviewed 200,000+ held comments across 20+ video launches, catching hate speech, slurs, and harmful content in real time.</li>
+    <li>Entrusted with the creator’s private identity; safeguarded it against doxxing attempts and assisted the team with production tasks as needed.</li>
+  </ul>
 </section>
 
 <section id="projects">
@@ -107,9 +119,17 @@
   <ul>
     <li>Built a full data pipeline ingesting 75k+ NBA records from public APIs into structured datasets.</li>
     <li>Engineered 18 predictive features including rolling averages, rest-day impacts, and pace metrics.</li>
-    <li>Trained XGBoost models for game outcome and player performance prediction using time-series cross-validation.</li>
+    <li>Trained XGBoost models for game outcome and player performance prediction using time-series cross-validation to prevent data leakage.</li>
     <li>Deployed an interactive Streamlit dashboard for live prediction visualization.</li>
     <li>Automated daily data ingestion and prediction updates via CLI pipeline.</li>
+  </ul>
+
+  <h3>Cosmic Evolution — Multiplayer Roblox Game</h3>
+  <p><em>Luau, Rojo, Git — Personal Project (Ongoing, 2026) · <a href="https://ro.blox.com/Ebh5?af_dp=roblox%3A%2F%2Fnavigation%2Fgame_details%3FgameId%3D10769668953&af_web_dp=https%3A%2F%2Fwww.roblox.com%2Fgames%2F117397556324595" target="_blank">Play it live</a></em></p>
+  <ul>
+    <li>Built and published a live multiplayer game with a server-authoritative architecture: all game state is computed and validated server-side while the client only renders and sends input, preventing client-side exploits.</li>
+    <li>Designed a modular, config-driven system of independent gameplay modules (real-time PvP, economy, progression, persistence), separating all balance data from logic so the game can be rebalanced without code changes.</li>
+    <li>Implemented persistent player data with session locking to prevent data loss and duplication, behind a data-access layer with an in-memory fallback for local testing.</li>
   </ul>
 
   <h3>User-Level Task Scheduler & Terminal Game</h3>
@@ -122,20 +142,12 @@
   </ul>
 
   <h3>Volleyball Statistics Tracker</h3>
-  <p><em>Java, JavaFX, SQL, Excel, JUnit — Personal Project</em></p>
+  <p><em>Java, JavaFX, SQL, Excel, JUnit — Personal Project (2024)</em></p>
   <ul>
     <li>Built a desktop application for recording live volleyball match statistics and generating analytics.</li>
     <li>Designed relational SQL database schema and tested with 100+ player-stat entries.</li>
     <li>Implemented Excel export functionality using Apache POI for downstream analysis.</li>
     <li>Added JUnit tests to validate statistical computations and data integrity.</li>
-  </ul>
-
-  <h3>NASA Space Apps Challenge — Solar Activity Visualizer</h3>
-  <p><em>Java, JavaFX, SQL — Hackathon Project (Oct 2025)</em></p>
-  <ul>
-    <li>Led development of an interactive visualization tool using NASA open data on solar flares and CMEs.</li>
-    <li>Implemented JavaFX-based UI and integrated real-time dataset rendering.</li>
-    <li>Collaborated on UX design and delivered a working prototype within 36 hours.</li>
   </ul>
 </section>
 
